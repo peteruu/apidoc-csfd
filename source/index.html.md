@@ -1,5 +1,5 @@
 ---
-title: Imdb Unofficial Api
+title: Csfd Unofficial Api
 
 language_tabs: # must be one of https://git.io/vQNgJ
 - php
@@ -8,7 +8,7 @@ search: true
 ---
 # Introduction
 
-Welcome to the Imdb Unofficial API! You can use our API to access Imdb content.
+Welcome to the Csfd Unofficial API! You can use our API to access Imdb content.
 In examples we are using Symfony component called [The HttpClient Component](https://symfony.com/doc/current/components/http_client.html).
 
 # Authentication
