@@ -308,8 +308,8 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
 <pre class="highlight php tab-php"><code><span class="cp">&lt;?php</span>
 <span class="nv">$query_parameters</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">'extra'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-        <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'popularTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imagePath'</span><span class="p">]],</span>
-        <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'latestTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">2</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imagePath'</span><span class="p">]],</span>
+        <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'popularTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imageSrc'</span><span class="p">]],</span>
+        <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'latestTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">2</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imageSrc'</span><span class="p">]],</span>
     <span class="p">],</span>
 <span class="p">];</span>
 
@@ -324,7 +324,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
          </span><span class="p">{</span><span class="w">
             </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">4969</span><span class="p">,</span><span class="w">
             </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Nekonečný"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"slug"</span><span class="p">:</span><span class="s2">"nekonecny"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">],</span><span class="w">
@@ -332,13 +332,13 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
          </span><span class="p">{</span><span class="w">
             </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">5038</span><span class="p">,</span><span class="w">
             </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Socket"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"slug"</span><span class="p">:</span><span class="s2">"socket"</span><span class="w">
          </span><span class="p">},</span><span class="w">
          </span><span class="p">{</span><span class="w">
             </span><span class="s2">"id"</span><span class="p">:</span><span class="mi">5037</span><span class="p">,</span><span class="w">
             </span><span class="s2">"name"</span><span class="p">:</span><span class="s2">"Pool Party"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="kc">null</span><span class="p">,</span><span class="w">
             </span><span class="s2">"slug"</span><span class="p">:</span><span class="s2">"pool-party"</span><span class="w">
          </span><span class="p">}</span><span class="w">
       </span><span class="p">]</span><span class="w">
@@ -412,7 +412,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
   </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9281</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"avengers"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -498,7 +498,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         <span class="s1">'id'</span> <span class="o">=&gt;</span> <span class="mi">9281</span><span class="p">,</span>
         <span class="s1">'entity'</span> <span class="o">=&gt;</span> <span class="s1">'Title'</span><span class="p">,</span>
         <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-                <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'skName'</span><span class="p">,</span> <span class="s1">'czName'</span><span class="p">,</span> <span class="s1">'orgName'</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">,</span> <span class="s1">'duration'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'imagePath'</span><span class="p">,</span> <span class="s1">'imagePathLarge'</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">,</span> <span class="s1">'premiereAt'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'slug'</span><span class="p">,</span> <span class="s1">'category'</span>
+                <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'skName'</span><span class="p">,</span> <span class="s1">'czName'</span><span class="p">,</span> <span class="s1">'orgName'</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">,</span> <span class="s1">'duration'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'imageSrc'</span><span class="p">,</span> <span class="s1">'imageSrcLarge'</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">,</span> <span class="s1">'premiereAt'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'slug'</span><span class="p">,</span> <span class="s1">'category'</span>
         <span class="p">],</span>
     <span class="p">],</span>
 <span class="p">];</span>
@@ -512,7 +512,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
   </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9281</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"avengers"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"skName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers: Pomstitelia"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"czName"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -520,7 +520,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
     </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2012</span><span class="p">,</span><span class="w">
     </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">143</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Marvel Studios uvádí super hrdinský tým všech dob Avengers, ve kterém se přestaví ikoničtí super hrdinové – Iron Man, Neuvěřitelný Hulk, Thor, Captain America, Hawkeye a Black Widow. Když se objeví nečekaný nepřítel, který ohrožuje světovou bezpečnost, Nick Fury, ředitel mezinárodní mírové agentury, známé také jako S.H.I.E.L.D., zjistí, že potřebuje tým, aby odvrátil světovou katastrofu. Začíná provádět nábor po celém světě."</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePathLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h480"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrcLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h480"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"rating"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">83</span><span class="p">,</span><span class="w">
       </span><span class="s2">"weight"</span><span class="p">:</span><span class="w"> </span><span class="mi">63923</span><span class="p">,</span><span class="w">
@@ -576,7 +576,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
   </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9281</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"avengers"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"cast"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
@@ -585,7 +585,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         </span><span class="s2">"person"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
           </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14417</span><span class="p">,</span><span class="w">
           </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joss Whedon"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+          </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
@@ -745,7 +745,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         <span class="s1">'id'</span> <span class="o">=&gt;</span> <span class="mi">9281</span><span class="p">,</span>
         <span class="s1">'entity'</span> <span class="o">=&gt;</span> <span class="s1">'Title'</span><span class="p">,</span>
         <span class="s1">'methods'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-            <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'otherTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imagePath'</span><span class="p">]],</span>
+            <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'otherTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imageSrc'</span><span class="p">]],</span>
         <span class="p">],</span>
     <span class="p">],</span>
 <span class="p">];</span>
@@ -759,13 +759,13 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
   </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9281</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"avengers"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"otherTitles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
         </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Především nikomu neublížím"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/384/384223_da0c9a.jpg?h180"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/384/384223_da0c9a.jpg?h180"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"predevsim-nikomu-neublizim"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -809,7 +809,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         <span class="s1">'id'</span> <span class="o">=&gt;</span> <span class="mi">9281</span><span class="p">,</span>
         <span class="s1">'entity'</span> <span class="o">=&gt;</span> <span class="s1">'Title'</span><span class="p">,</span>
         <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-            <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'skName'</span><span class="p">,</span> <span class="s1">'czName'</span><span class="p">,</span> <span class="s1">'orgName'</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">,</span> <span class="s1">'duration'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'imagePath'</span><span class="p">,</span> <span class="s1">'imagePathLarge'</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">,</span> <span class="s1">'premiereAt'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'category'</span>
+            <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'skName'</span><span class="p">,</span> <span class="s1">'czName'</span><span class="p">,</span> <span class="s1">'orgName'</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">,</span> <span class="s1">'duration'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'imageSrc'</span><span class="p">,</span> <span class="s1">'imageSrcLarge'</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">,</span> <span class="s1">'premiereAt'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'category'</span>
         <span class="p">],</span>
         <span class="s1">'relations'</span> <span class="o">=&gt;</span> <span class="p">[</span>
             <span class="s1">'cast'</span> <span class="o">=&gt;</span>  <span class="p">[</span><span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">]],</span>
@@ -820,12 +820,12 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
             <span class="s1">'titleTags'</span> <span class="o">=&gt;</span>  <span class="p">[</span><span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">]],</span>
         <span class="p">],</span>
         <span class="s1">'methods'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-            <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'otherTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imagePath'</span><span class="p">]],</span>
+            <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'otherTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imageSrc'</span><span class="p">]],</span>
         <span class="p">],</span>
     <span class="p">],</span>
     <span class="s1">'extra'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-        <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'popularTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imagePath'</span><span class="p">]],</span>
-        <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'latestTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imagePath'</span><span class="p">]],</span>
+        <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'popularTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imageSrc'</span><span class="p">]],</span>
+        <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'latestTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imageSrc'</span><span class="p">]],</span>
     <span class="p">],</span>
 <span class="p">];</span>
 <span class="nv">$api_key</span> <span class="o">=</span> <span class="nx">YOURAPIKEY</span><span class="p">;</span>
@@ -845,7 +845,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
   </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9281</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"avengers"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"skName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers: Pomstitelia"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"czName"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
@@ -853,7 +853,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
     </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2012</span><span class="p">,</span><span class="w">
     </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">143</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Marvel Studios uvádí super hrdinský tým všech dob Avengers, ve kterém se přestaví ikoničtí super hrdinové – Iron Man, Neuvěřitelný Hulk, Thor, Captain America, Hawkeye a Black Widow. Když se objeví nečekaný nepřítel, který ohrožuje světovou bezpečnost, Nick Fury, ředitel mezinárodní mírové agentury, známé také jako S.H.I.E.L.D., zjistí, že potřebuje tým, aby odvrátil světovou katastrofu. Začíná provádět nábor po celém světě."</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePathLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h480"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrcLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h480"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"rating"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">83</span><span class="p">,</span><span class="w">
       </span><span class="s2">"weight"</span><span class="p">:</span><span class="w"> </span><span class="mi">63923</span><span class="p">,</span><span class="w">
@@ -869,7 +869,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         </span><span class="s2">"person"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
           </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">14417</span><span class="p">,</span><span class="w">
           </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Joss Whedon"</span><span class="p">,</span><span class="w">
-          </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+          </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
         </span><span class="p">}</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
@@ -903,7 +903,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
         </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Především nikomu neublížím"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/384/384223_da0c9a.jpg?h180"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/384/384223_da0c9a.jpg?h180"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"predevsim-nikomu-neublizim"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -913,7 +913,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9281</span><span class="p">,</span><span class="w">
         </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"avengers"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
@@ -921,7 +921,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">9281</span><span class="p">,</span><span class="w">
         </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h180"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"avengers"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -951,7 +951,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
   </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jerry Zucker"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?w100h132crop"</span><span class="w">
+    </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?w100h132crop"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 
@@ -1024,7 +1024,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         <span class="s1">'id'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
         <span class="s1">'entity'</span> <span class="o">=&gt;</span> <span class="s1">'Person'</span><span class="p">,</span>
         <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-                <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'lastname'</span><span class="p">,</span> <span class="s1">'imagePath'</span><span class="p">,</span> <span class="s1">'imagePathLarge'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'birthDt'</span><span class="p">,</span> <span class="s1">'birthPlace'</span><span class="p">,</span> <span class="s1">'deathDt'</span><span class="p">,</span> <span class="s1">'deathPlace'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'popularity'</span>
+                <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'lastname'</span><span class="p">,</span> <span class="s1">'imageSrc'</span><span class="p">,</span> <span class="s1">'imageSrcLarge'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'birthDt'</span><span class="p">,</span> <span class="s1">'birthPlace'</span><span class="p">,</span> <span class="s1">'deathDt'</span><span class="p">,</span> <span class="s1">'deathPlace'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'popularity'</span>
         <span class="p">],</span>
     <span class="p">],</span>
 <span class="p">];</span>
@@ -1038,9 +1038,9 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
   </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jerry Zucker"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?w100h132crop"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?w100h132crop"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"lastname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zucker"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePathLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?h480"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrcLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?h480"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Je nejmladším členem proslulé trojice ZAZ (do níž náleží jeho starší bratr David a Jim Abrahams), která je považována za nejvýznamnější tvůrce americké filmové parodie. Jejich práce se po většinu kariéry prolínala a proto jsou jejich životopisy velmi podobné. Často spolupracují ještě se scenáristou Patem Proftem. První společný projekt, na kterém se ZAZ podíleli byla komedie KENTUCKY FRIED MOVIE z roku 1977. Jerry posléze spolupracoval na režii komediálního muzikálu ROCK´N´ROLL HIGH SCHOOL, se slavnou americkou punkovou kapelou Ramones v hlavních rolích. V roce 1980 přichází první společný režijní počin ZAZ - snímek PŘIPOUTEJTE SE, PROSÍM!, jež se dočkal mnoha ocenění a odstartoval sérii ztřeštěných parodií zmiňované trojice. Jerry se na mnoha těchto filmech střídavě podílel jako režisér, scenárista i producent. Za zmínku stojí například seriál POLICE SQUAD! parodující televizní krimi-série, jenž se dočkal převedení i do filmové podoby jako BLÁZNIVÁ STŘELA (Jerry napsal scénář ke všem třem filmovým dílům).&lt;br&gt;&lt;br&gt;V 90. letech se členové ZAZ vydali každý svojí cestou. Mladší z bratrů Zuckerových překvapil v roce 1990 režií lehce komediálního melodramatu s Patrickem Swayzem a Whoopi Goldberg DUCH. Jednalo se o Jerryho první samostatný projekt a hned se dočkal nominace na pět Oscarů, včetně toho za nejlepší film. Dvě sošky (za nejlepší scénář a ženský herecký výkon ve vedlejší roli) nakonec skutečně získal.&lt;br&gt;&lt;br&gt;V roce 1995 Jerry převzal po zesnulém režisérovi Terenci Youngovi režii netradiční adaptace legendy o králi Artušovi PRVNÍ RYTÍŘ s Seanem Connerym a Richardem Gerem. Snímek ovšem příliš nezabodoval. Naposledy se oblíbený tvůrce vrátil na režisérskou stoličku v roce 2001, kdy natočil dobrodružnou crazy komedii s hvězdným obsazením MILIÓNOVÝ ZÁVOD. Od té doby si dal od filmování delší pauzu a v současné době se věnuje výhradně filmové produkci.&lt;br&gt;&lt;br&gt;Stejně jako jeho bratr David a Jim Abrahams i Jerry rád obsazuje do miniaturních úloh členy své rodiny a sem tam si sám rovněž zahraje nějakou tu cameo roli."</span><span class="p">,</span><span class="w">
     </span><span class="s2">"birthDt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1950-03-11"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"birthPlace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Milwaukee, Wisconsin, USA"</span><span class="p">,</span><span class="w">
@@ -1076,7 +1076,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         <span class="s1">'id'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
         <span class="s1">'entity'</span> <span class="o">=&gt;</span> <span class="s1">'Person'</span><span class="p">,</span>
         <span class="s1">'methods'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-            <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'otherTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imagePath'</span><span class="p">]],</span>
+            <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'otherTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imageSrc'</span><span class="p">]],</span>
         <span class="p">],</span>
     <span class="p">],</span>
 <span class="p">];</span>
@@ -1090,12 +1090,12 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
   </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jerry Zucker"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?w100h132crop"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?w100h132crop"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"otherTitles"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
         </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Připoutejte se, prosím!"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/158/494/158494389_fd1b24.jpg?h180"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/158/494/158494389_fd1b24.jpg?h180"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pripoutejte-se-prosim"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
@@ -1139,10 +1139,10 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         <span class="s1">'id'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
         <span class="s1">'entity'</span> <span class="o">=&gt;</span> <span class="s1">'Person'</span><span class="p">,</span>
         <span class="s1">'methods'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-            <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'otherTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imagePath'</span><span class="p">]],</span>
+            <span class="p">[</span><span class="s1">'function'</span> <span class="o">=&gt;</span> <span class="s1">'otherTitles'</span><span class="p">,</span> <span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'imageSrc'</span><span class="p">]],</span>
         <span class="p">],</span>
         <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-            <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'lastname'</span><span class="p">,</span> <span class="s1">'imagePath'</span><span class="p">,</span> <span class="s1">'imagePathLarge'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'birthDt'</span><span class="p">,</span> <span class="s1">'birthPlace'</span><span class="p">,</span> <span class="s1">'deathDt'</span><span class="p">,</span> <span class="s1">'deathPlace'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'popularity'</span>
+            <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'lastname'</span><span class="p">,</span> <span class="s1">'imageSrc'</span><span class="p">,</span> <span class="s1">'imageSrcLarge'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'birthDt'</span><span class="p">,</span> <span class="s1">'birthPlace'</span><span class="p">,</span> <span class="s1">'deathDt'</span><span class="p">,</span> <span class="s1">'deathPlace'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'popularity'</span>
         <span class="p">],</span>
     <span class="p">],</span>
 <span class="p">];</span>
@@ -1163,9 +1163,9 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
   </span><span class="s2">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jerry Zucker"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?w100h132crop"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?w100h132crop"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"lastname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Zucker"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"imagePathLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?h480"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"imageSrcLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/creator/photos/000/269/269781_2d796d.jpg?h480"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Je nejmladším členem proslulé trojice ZAZ (do níž náleží jeho starší bratr David a Jim Abrahams), která je považována za nejvýznamnější tvůrce americké filmové parodie. Jejich práce se po většinu kariéry prolínala a proto jsou jejich životopisy velmi podobné. Často spolupracují ještě se scenáristou Patem Proftem. První společný projekt, na kterém se ZAZ podíleli byla komedie KENTUCKY FRIED MOVIE z roku 1977. Jerry posléze spolupracoval na režii komediálního muzikálu ROCK´N´ROLL HIGH SCHOOL, se slavnou americkou punkovou kapelou Ramones v hlavních rolích. V roce 1980 přichází první společný režijní počin ZAZ - snímek PŘIPOUTEJTE SE, PROSÍM!, jež se dočkal mnoha ocenění a odstartoval sérii ztřeštěných parodií zmiňované trojice. Jerry se na mnoha těchto filmech střídavě podílel jako režisér, scenárista i producent. Za zmínku stojí například seriál POLICE SQUAD! parodující televizní krimi-série, jenž se dočkal převedení i do filmové podoby jako BLÁZNIVÁ STŘELA (Jerry napsal scénář ke všem třem filmovým dílům).&lt;br&gt;&lt;br&gt;V 90. letech se členové ZAZ vydali každý svojí cestou. Mladší z bratrů Zuckerových překvapil v roce 1990 režií lehce komediálního melodramatu s Patrickem Swayzem a Whoopi Goldberg DUCH. Jednalo se o Jerryho první samostatný projekt a hned se dočkal nominace na pět Oscarů, včetně toho za nejlepší film. Dvě sošky (za nejlepší scénář a ženský herecký výkon ve vedlejší roli) nakonec skutečně získal.&lt;br&gt;&lt;br&gt;V roce 1995 Jerry převzal po zesnulém režisérovi Terenci Youngovi režii netradiční adaptace legendy o králi Artušovi PRVNÍ RYTÍŘ s Seanem Connerym a Richardem Gerem. Snímek ovšem příliš nezabodoval. Naposledy se oblíbený tvůrce vrátil na režisérskou stoličku v roce 2001, kdy natočil dobrodružnou crazy komedii s hvězdným obsazením MILIÓNOVÝ ZÁVOD. Od té doby si dal od filmování delší pauzu a v současné době se věnuje výhradně filmové produkci.&lt;br&gt;&lt;br&gt;Stejně jako jeho bratr David a Jim Abrahams i Jerry rád obsazuje do miniaturních úloh členy své rodiny a sem tam si sám rovněž zahraje nějakou tu cameo roli."</span><span class="p">,</span><span class="w">
     </span><span class="s2">"birthDt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1950-03-11"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"birthPlace"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Milwaukee, Wisconsin, USA"</span><span class="p">,</span><span class="w">
@@ -1177,7 +1177,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
       </span><span class="p">{</span><span class="w">
         </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
         </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Připoutejte se, prosím!"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"imagePath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/158/494/158494389_fd1b24.jpg?h180"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"imageSrc"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/158/494/158494389_fd1b24.jpg?h180"</span><span class="p">,</span><span class="w">
         </span><span class="s2">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pripoutejte-se-prosim"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">]</span><span class="w">
