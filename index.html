@@ -365,7 +365,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
 <p></td>
                 <td>
                                                 <div><span><strong>Default:</strong> </span>id, name, imageSrc, slug</div>
-    <div><span><strong>Valid Options:</strong> </span>id, name, skName, czName, orgName, year, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</div></p>
+    <div><span><strong>Valid Options:</strong> </span>id, name, skName, czName, orgName, releasedYear, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</div></p>
 
 <p></td>
                 <td>
@@ -383,7 +383,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
 <p></td>
                 <td>
                                                 <div><span><strong>Default:</strong> </span>id, name, imageSrc, slug</div>
-    <div><span><strong>Valid Options:</strong> </span>id, name, skName, czName, orgName, year, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</div></p>
+    <div><span><strong>Valid Options:</strong> </span>id, name, skName, czName, orgName, releasedYear, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</div></p>
 
 <p></td>
                 <td>
@@ -498,7 +498,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         <span class="s1">'id'</span> <span class="o">=&gt;</span> <span class="mi">9281</span><span class="p">,</span>
         <span class="s1">'entity'</span> <span class="o">=&gt;</span> <span class="s1">'Title'</span><span class="p">,</span>
         <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-                <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'skName'</span><span class="p">,</span> <span class="s1">'czName'</span><span class="p">,</span> <span class="s1">'orgName'</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">,</span> <span class="s1">'duration'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'imageSrc'</span><span class="p">,</span> <span class="s1">'imageSrcLarge'</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">,</span> <span class="s1">'premiereAt'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'slug'</span><span class="p">,</span> <span class="s1">'category'</span>
+                <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'skName'</span><span class="p">,</span> <span class="s1">'czName'</span><span class="p">,</span> <span class="s1">'orgName'</span><span class="p">,</span> <span class="s1">'releasedYear'</span><span class="p">,</span> <span class="s1">'duration'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'imageSrc'</span><span class="p">,</span> <span class="s1">'imageSrcLarge'</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">,</span> <span class="s1">'premiereAt'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'slug'</span><span class="p">,</span> <span class="s1">'category'</span>
         <span class="p">],</span>
     <span class="p">],</span>
 <span class="p">];</span>
@@ -517,7 +517,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
     </span><span class="s2">"skName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers: Pomstitelia"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"czName"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"orgName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Avengers"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2012</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"releasedYear"</span><span class="p">:</span><span class="w"> </span><span class="mi">2012</span><span class="p">,</span><span class="w">
     </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">143</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Marvel Studios uvádí super hrdinský tým všech dob Avengers, ve kterém se přestaví ikoničtí super hrdinové – Iron Man, Neuvěřitelný Hulk, Thor, Captain America, Hawkeye a Black Widow. Když se objeví nečekaný nepřítel, který ohrožuje světovou bezpečnost, Nick Fury, ředitel mezinárodní mírové agentury, známé také jako S.H.I.E.L.D., zjistí, že potřebuje tým, aby odvrátil světovou katastrofu. Začíná provádět nábor po celém světě."</span><span class="p">,</span><span class="w">
     </span><span class="s2">"imageSrcLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h480"</span><span class="p">,</span><span class="w">
@@ -543,7 +543,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         <tbody>
             <tr>
                 <td>id, name, imageSrc, slug</td>
-                <td>id, name, skName, czName, orgName, year, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</td>
+                <td>id, name, skName, czName, orgName, releasedYear, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</td>
             </tr>
         </tbody>
     </table></p>
@@ -791,7 +791,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
 <p></td>
                 <td>
                                                 <div><span><strong>Default:</strong> </span>id, name, imageSrc, slug</div>
-    <div><span><strong>Valid Options:</strong> </span>id, name, skName, czName, orgName, year, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</div></p>
+    <div><span><strong>Valid Options:</strong> </span>id, name, skName, czName, orgName, releasedYear, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</div></p>
 
 <p></td>
                 <td>
@@ -809,7 +809,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
         <span class="s1">'id'</span> <span class="o">=&gt;</span> <span class="mi">9281</span><span class="p">,</span>
         <span class="s1">'entity'</span> <span class="o">=&gt;</span> <span class="s1">'Title'</span><span class="p">,</span>
         <span class="s1">'properties'</span> <span class="o">=&gt;</span> <span class="p">[</span>
-            <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'skName'</span><span class="p">,</span> <span class="s1">'czName'</span><span class="p">,</span> <span class="s1">'orgName'</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">,</span> <span class="s1">'duration'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'imageSrc'</span><span class="p">,</span> <span class="s1">'imageSrcLarge'</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">,</span> <span class="s1">'premiereAt'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'category'</span>
+            <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'skName'</span><span class="p">,</span> <span class="s1">'czName'</span><span class="p">,</span> <span class="s1">'orgName'</span><span class="p">,</span> <span class="s1">'releasedYear'</span><span class="p">,</span> <span class="s1">'duration'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'imageSrc'</span><span class="p">,</span> <span class="s1">'imageSrcLarge'</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">,</span> <span class="s1">'premiereAt'</span><span class="p">,</span> <span class="s1">'local'</span><span class="p">,</span> <span class="s1">'category'</span>
         <span class="p">],</span>
         <span class="s1">'relations'</span> <span class="o">=&gt;</span> <span class="p">[</span>
             <span class="s1">'cast'</span> <span class="o">=&gt;</span>  <span class="p">[</span><span class="s1">'parameters'</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="s1">'limit'</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">]],</span>
@@ -850,7 +850,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
     </span><span class="s2">"skName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Avengers: Pomstitelia"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"czName"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
     </span><span class="s2">"orgName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Avengers"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">2012</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"releasedYear"</span><span class="p">:</span><span class="w"> </span><span class="mi">2012</span><span class="p">,</span><span class="w">
     </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">143</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Marvel Studios uvádí super hrdinský tým všech dob Avengers, ve kterém se přestaví ikoničtí super hrdinové – Iron Man, Neuvěřitelný Hulk, Thor, Captain America, Hawkeye a Black Widow. Když se objeví nečekaný nepřítel, který ohrožuje světovou bezpečnost, Nick Fury, ředitel mezinárodní mírové agentury, známé také jako S.H.I.E.L.D., zjistí, že potřebuje tým, aby odvrátil světovou katastrofu. Začíná provádět nábor po celém světě."</span><span class="p">,</span><span class="w">
     </span><span class="s2">"imageSrcLarge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://img.csfd.cz/files/images/film/posters/000/486/486686_69f4e4.jpg?h480"</span><span class="p">,</span><span class="w">
@@ -1121,7 +1121,7 @@ In examples we are using Symfony component called <a href="https://symfony.com/d
 <p></td>
                 <td>
                                                 <div><span><strong>Default:</strong> </span>id, name, imageSrc, slug</div>
-    <div><span><strong>Valid Options:</strong> </span>id, name, skName, czName, orgName, year, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</div></p>
+    <div><span><strong>Valid Options:</strong> </span>id, name, skName, czName, orgName, releasedYear, duration, description, imageSrc, imageSrcLarge, rating, premiereAt, local, slug, category</div></p>
 
 <p></td>
                 <td>
